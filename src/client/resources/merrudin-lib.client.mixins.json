@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.srfennec.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ItemRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

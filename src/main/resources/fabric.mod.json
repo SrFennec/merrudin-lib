@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "merrudin-lib",
+	"version": "${version}",
+	"name": "Merrudin Lib",
+	"description": "This is a library mod mainly used for SrFennec's mods \nDynamic item model swapping and more.",
+	"authors": [
+		"SrFennec"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)",
+	"icon": "assets/merrudin-lib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.srfennec.MerrudinLib"
+		],
+		"client": [
+			"net.srfennec.MerrudinLibClient"
+		]
+	},
+	"mixins": [
+		"merrudin-lib.mixins.json",
+		{
+			"config": "merrudin-lib.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
